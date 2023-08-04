@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Detalles de {{title}}</h1>
+    <hr>
+    <p>Sinopsis: {{description}}</p>
+    <hr>
+    <p>Autores/as: </p>
+
+    {{#each author}}
+    <img src="{{pictureUrl}}" alt="{{name}} {{lastName}}" style="width: 200px">
+    <p>{{name}} {{lastName}} ({{nationality}})</p>
+    <hr>
+    {{/each}}
+
+</div>
